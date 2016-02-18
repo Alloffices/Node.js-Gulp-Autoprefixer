@@ -7,3 +7,7 @@ gulp.task('styles',function() {
     .pipe(autoprefixer())
     .pipe(gulp.dest('build'))
 });
+
+gulp.task('watch',function() {
+	gulp.watch('css/styles.css', ['styles'])
+});
